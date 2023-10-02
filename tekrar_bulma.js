@@ -33,6 +33,7 @@ function tekrarBul()
                 enbuyukKarakter = key
             }
         });
+        result = result.slice(0, -2);
         document.getElementById("result2").innerHTML = result
         result = "";
         console.log("\nEn çok tekrar eden:")
