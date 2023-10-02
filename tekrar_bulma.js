@@ -4,7 +4,7 @@ function tekrarBul()
     const metin = document.getElementById("input").value
     if(metin === "")
     {
-        document.getElementById("result").innerHTML= "Metin Girin!"
+        document.getElementById("result").innerText= "Metin Girin!"
         return
     }
  
@@ -35,11 +35,11 @@ function tekrarBul()
             }
         });
         result = result.slice(0, -2);
-        document.getElementById("result2").innerHTML = result
+        document.getElementById("result2").innerText = result
         result = "";
         console.log("\nEn çok tekrar eden:")
         console.log(enbuyukKarakter + " = " + enbuyuksayi) 
-        document.getElementById("result").innerHTML= ("En çok tekrar eden: " + enbuyukKarakter + " = " + enbuyuksayi) 
+        document.getElementById("result").innerText= ("En çok tekrar eden: " + enbuyukKarakter + " = " + enbuyuksayi) 
        
 }
 input.addEventListener("keypress", function(event) {
@@ -57,8 +57,8 @@ input.addEventListener("keypress", function(event) {
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
-      document.getElementById("result").innerHTML = "&nbsp;";
-      document.getElementById("result2").innerHTML = "&nbsp;";
+      document.getElementById("result").innerText = "&nbsp;";
+      document.getElementById("result2").innerText = "&nbsp;";
     }
   });
 
