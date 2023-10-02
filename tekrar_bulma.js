@@ -38,7 +38,7 @@ function tekrarBul()
         console.log("\nEn çok tekrar eden:")
         console.log(enbuyukKarakter + " = " + enbuyuksayi) 
         document.getElementById("result").innerHTML= ("En çok tekrar eden: " + enbuyukKarakter + " = " + enbuyuksayi) 
-        
+       
 }
 input.addEventListener("keypress", function(event) {
     // If the user presses the "Enter" key on the keyboard
@@ -59,3 +59,14 @@ input.addEventListener("keypress", function(event) {
       document.getElementById("result2").innerHTML = "";
     }
   });
+
+//Şükürrr
+  function outputsize() {
+    const textarea = document.getElementById('input');
+    const wrappedText = document.querySelector("p");
+    wrappedText.style.maxWidth = `${textarea.scrollWidth}px`;  
+   }
+
+   outputsize()
+   
+   new ResizeObserver(outputsize).observe(input)

@@ -1,5 +1,5 @@
 *{
- 
+    box-sizing: border-box;
     margin: 0;
 }
 body{
@@ -19,6 +19,8 @@ body{
 }
 
 .card{
+    max-width: 100%;
+    overflow: hidden;
     color: black;
     display: flex;
     justify-content: center;
@@ -41,9 +43,10 @@ body{
     }
   }
 #input{
+    min-width: 201px;
     border: 1px solid rgba(27, 31, 35, 0.15);
     padding: 8px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     background: white;
     box-shadow: rgba(99, 99, 99, 0.13) 0px 2px 8px 0px;
 }
@@ -108,7 +111,8 @@ h1{
 }
 
 p{
-    max-width: 200px;
-    word-wrap: break-word;
+    min-width: 201px;
+    word-wrap: break-word; /* Wrap text when it reaches the corner */
+    white-space: normal; /* Prevent textarea from affecting white-space */
     margin: 10px 0;
 }
