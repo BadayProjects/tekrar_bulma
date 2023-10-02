@@ -1,1 +1,1 @@
-# tekrar_bulma
+# JavaScript Tekrar Bulma
