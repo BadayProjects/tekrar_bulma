@@ -16,7 +16,8 @@ function tekrarBul()
     
         for(const char in metin)
         {
-            karakter = metin[char]
+            karakter = metin[char].toLowerCase()
+            console.log(karakter)
             if(!map.has(karakter))
             map.set(karakter,1)
             else
