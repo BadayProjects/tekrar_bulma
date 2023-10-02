@@ -116,3 +116,9 @@ p{
     white-space: normal; /* Prevent textarea from affecting white-space */
     margin: 10px 0;
 }
+@media screen and (max-width: 600px) {
+  body {
+    min-height: 0px;
+    margin-top: 50px;
+  }
+}
