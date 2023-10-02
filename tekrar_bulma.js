@@ -55,8 +55,8 @@ input.addEventListener("keypress", function(event) {
       // Cancel the default action, if needed
       event.preventDefault();
       // Trigger the button element with a click
-      document.getElementById("result").innerHTML = "";
-      document.getElementById("result2").innerHTML = "";
+      document.getElementById("result").innerHTML = "&nbsp;";
+      document.getElementById("result2").innerHTML = "&nbsp;";
     }
   });
 
